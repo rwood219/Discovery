@@ -43,3 +43,18 @@ ul > .item {
   color: var(--main-font-color);
 }
 
+.immage-slider-ctn{
+    width:100%;
+}
+
+.img{
+    height: auto;
+    width:100%;
+}
+
+.jumbo-banner-ctn {
+    display: flex;
+    justify-content: center;
+}
+
+
