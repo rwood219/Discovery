@@ -1,5 +1,5 @@
 :root {
-  --main-bg-color: black;
+  --main-bg-color: rgb(0, 0, 0);
   --second-bg-color: red;
   --third-bg-color: gray;
   --main-font-style: helvetica;
@@ -14,6 +14,10 @@
 }
 body {
   background-color: var(--main-bg-color);
+}
+
+.disabled {
+    display: none !important;
 }
 
 .main-nav-ctn {
