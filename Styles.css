@@ -1,0 +1,45 @@
+:root {
+  --main-bg-color: black;
+  --second-bg-color: red;
+  --third-bg-color: gray;
+  --main-font-style: helvetica;
+  --second-font-style: arial;
+  --main-font-color: white;
+  --second-font-color: black;
+  --main-font-weight: bold;
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+
+.main-nav-ctn {
+  display: flex;
+  justify-content: space-evenly;
+  color: var(--main-font-color);
+  width: 100vw;
+}
+
+ul {
+  display: inline-flex;
+  list-style: none;
+}
+ul > .item {
+  justify-content: space-evenly;
+}
+
+.item {
+  margin: 20px;
+  transition: font-size 1.5s ease;
+}
+
+.item:hover {
+    text-decoration: underline;
+    font-size: 1.5em;
+}
+
+.social-links {
+  position: fixed;
+  color: var(--main-font-color);
+}
+
