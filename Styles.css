@@ -9,6 +9,9 @@
   --main-font-weight: bold;
 }
 
+*{
+    color: var(--main-font-color);
+}
 body {
   background-color: var(--main-bg-color);
 }
@@ -57,4 +60,32 @@ ul > .item {
     justify-content: center;
 }
 
+.footer-ctn {
+    margin-bottom: 0px;
+}
 
+.about-section {
+    color: var(--main-font-color);
+    display: inline-block;
+    text-align: center;
+}
+
+.main-card-grid-ctn {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+
+.main-content-ctn{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.main-content-ctn > div {
+text-align: center;
+border: 2px solid gray;
+padding: 2em;
+}
+button{
+    background-color: var(--second-bg-color);
+}
