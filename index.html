@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="path/to/font-awesome/css/font-awesome.min.css"
     />
-    <title>Discovery Antiques</title>
+    <title>Sample site</title>
   </head>
   <body>
     <div class="jumbo-banner-ctn">
@@ -16,19 +16,27 @@
         <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
         <i style="color: white" class="fa-brands fa-square-instagram"></i>
       </div>
-      <img src="/Public/logo.webp" alt="logo" />
+      <!--Image/ logo for banner is set is JS-->
+      <img height="200px" width="100%" class="company-logo" src="#" alt="" />
+      <h1></h1>
     </div>
-
     <div class="main-nav-ctn">
       <ul class="nav-links-full">
         <li class="item">Home</li>
-        <li class="item">Shop</li>
-        <li class="item">Appaisals</li>
-        <li class="item">Estate Sales</li>
-        <li class="item">Contact Us</li>
+        <li class="item">Nav Link</li>
+        <li class="item">Nav Link</li>
+        <li class="item">Nav Link</li>
+        <li class="item">Nav Link</li>
+      </ul>
+      <ul class="nav-links-mobile disabled">
+        <li class="item">Home</li>
+        <li class="item">Nav Link</li>
+        <li class="item">Nav Link</li>
+        <li class="item">Nav Link</li>
+        <li class="item">Nav Link</li>
       </ul>
     </div>
-
+  
     <div class="about-section">
       <h2>About us</h2>
       <p>
@@ -39,16 +47,16 @@
         necessitatibus incidunt?
       </p>
     </div>
-
-    <!--Image Slider-->
+    </div>
+    <!--Image Slider Images set in js-->
     <div class="image-slider-ctn">
       <img width="100%" height="400" id="image-slider-active" src="" alt="" />
     </div>
 
-    <!--main content?-->
+    <!-- Main content -->
     <div class="main-content-ctn">
-      <div class="">
-        <span><h2>Jewelry</h2></span>
+      <div>
+        <span><h2>Card Title</h2></span>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
           praesentium iste voluptas beatae quae minima tempore quaerat magni
@@ -57,10 +65,10 @@
           fugiat animi nesciunt dignissimos velit sit nihil quo dolor quidem
           sapiente earum esse.
         </p>
-        <a href="https://www.estatesales.net/NJ/Warren/07059/3780420"><button></button></a>
+        <a href="#"><button class="disabled"></button></a>
       </div>
-      <div class="">
-        <span><h2>Antiques</h2></span>
+      <div>
+        <span><h2>Card Title</h2></span>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
           praesentium iste voluptas beatae quae minima tempore quaerat magni
@@ -69,10 +77,10 @@
           fugiat animi nesciunt dignissimos velit sit nihil quo dolor quidem
           sapiente earum esse.
         </p>
-        <a href="https://www.estatesales.net/NJ/Warren/07059/3780420"><button class="disabled"></button></a>
+        <a href="#"><button class="disabled"></button></a>
       </div>
-      <div class="">
-        <span><h2>Estate Sales</h2></span>
+      <div>
+        <span><h2>Card Title</h2></span>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
           praesentium iste voluptas beatae quae minima tempore quaerat magni
@@ -81,10 +89,10 @@
           fugiat animi nesciunt dignissimos velit sit nihil quo dolor quidem
           sapiente earum esse.
         </p>
-        <a href="https://www.estatesales.net/NJ/Warren/07059/3780420"><button></button></a>
+        <a href="#"><button class="disabled"></button></a>
       </div>
-      <div class="">
-        <span><h2>Appraisels</h2></span>
+      <div>
+        <span><h2>Card Title</h2></span>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
           praesentium iste voluptas beatae quae minima tempore quaerat magni
@@ -93,7 +101,7 @@
           fugiat animi nesciunt dignissimos velit sit nihil quo dolor quidem
           sapiente earum esse.
         </p>
-        <a href="https://www.estatesales.net/NJ/Warren/07059/3780420"><button></button></a>
+        <a href="#"><button class="disabled"></button></a>
       </div>
     </div>
 
@@ -104,7 +112,7 @@
           <img
             height="250"
             width="auto"
-            src="/Public/rings-pinkbg-unsplash.jpg"
+            src="https://unsplash.com/photos/4qSb_FWhHKs"
             alt=""
           />
         </a>
@@ -163,20 +171,33 @@
 
     <!--Footer Section-->
     <div class="footer-ctn">
-      <footer>
-        <div class="social-links">
-          <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-          <i style="color: white" class="fa-brands fa-square-instagram"></i>
-        </div>
-        <div class="contact">
-            <h2>Contact Us</h2>
-            <span>Hours</span>
-            <ul>
-                <li></li>
-            </ul>
-        </div>
-      </footer>
+      <img
+        height="250px"
+        width="100%"
+        src="/Public/jewerly banner.webp"
+        alt=""
+      />
     </div>
+    <div class="footer-ctn">
+      <div class="social-links">
+        <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <i style="color: white" class="fa-brands fa-square-instagram"></i>
+      </div>
+      <div>
+        <h2>Contact Us</h2>
+        <span>Hours</span>
+        <ul id="hours-list">
+          <li id="sunday-hours"></li>
+          <li id="monday-hours"></li>
+          <li id="tuesday-hours"></li>
+          <li id="wednesday-hours"></li>
+          <li id="thursday-hours"></li>
+          <li id="friday-hours"></li>
+          <li id="saturday-hours"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
     <!---->
     <script src="/main.js"></script>
     <script
