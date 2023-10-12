@@ -8,35 +8,36 @@
       rel="stylesheet"
       href="path/to/font-awesome/css/font-awesome.min.css"
     />
-    <title>Sample site</title>
+    <title>Sample Site</title>
   </head>
   <body>
     <div class="jumbo-banner-ctn">
       <div class="social-links">
-        <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-        <i style="color: white" class="fa-brands fa-square-instagram"></i>
+        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
       </div>
-      <!--Image/ logo for banner is set is JS-->
-      <img height="200px" width="100%" class="company-logo" src="#" alt="" />
-      <h1></h1>
+      <!-- logo for banner is set is JS-->
+      <img height="200px" width="100%" class="company-logo" src="#" alt="">
+      <!--h1>Your Logo Here</h1-->
     </div>
     <div class="main-nav-ctn">
       <ul class="nav-links-full">
-        <li class="item">Home</li>
-        <li class="item">Nav Link</li>
-        <li class="item">Nav Link</li>
-        <li class="item">Nav Link</li>
-        <li class="item">Nav Link</li>
+        <li class="nav-link">Home</li>
+        <li class="nav-link">Nav Link</li>
+        <li class="nav-link">Nav Link</li>
+        <li class="nav-link">Nav Link</li>
+        <li class="nav-link">Nav Link</li>
       </ul>
+      <!--Mobile NavBar-->
       <ul class="nav-links-mobile disabled">
-        <li class="item">Home</li>
-        <li class="item">Nav Link</li>
-        <li class="item">Nav Link</li>
-        <li class="item">Nav Link</li>
-        <li class="item">Nav Link</li>
+        <button class="nav-bar-expand"></button>
+        <li class="nav-link-mobile">Home</li>
+        <li class="nav-link-mobile">Nav Link</li>
+        <li class="nav-link-mobile">Nav Link</li>
+        <li class="nav-link-mobile">Nav Link</li>
+        <li class="nav-link-mobile">Nav Link</li>
       </ul>
     </div>
-  
+    <!--Brief about section-->
     <div class="about-section">
       <h2>About us</h2>
       <p>
@@ -47,14 +48,14 @@
         necessitatibus incidunt?
       </p>
     </div>
-    </div>
+
     <!--Image Slider Images set in js-->
     <div class="image-slider-ctn">
       <img width="100%" height="400" id="image-slider-active" src="" alt="" />
     </div>
 
     <!-- Main content -->
-    <div class="main-content-ctn">
+    <div class="main-content-ctn grid">
       <div>
         <span><h2>Card Title</h2></span>
         <p>
@@ -65,7 +66,7 @@
           fugiat animi nesciunt dignissimos velit sit nihil quo dolor quidem
           sapiente earum esse.
         </p>
-        <a href="#"><button class="disabled"></button></a>
+        <a href="#"><button id="learn-more-btn">Learn More</button></a>
       </div>
       <div>
         <span><h2>Card Title</h2></span>
@@ -106,75 +107,63 @@
     </div>
 
     <!--card grid gallery-->
-    <div class="main-card-grid-ctn">
-      <div class="grid-item">
-        <a href="">
-          <img
-            height="250"
-            width="auto"
-            src="https://unsplash.com/photos/4qSb_FWhHKs"
-            alt=""
-          />
-        </a>
-      </div>
-      <div class="grid-item">
-        <a href="http://">
-          <img
-            height="250"
-            width="auto"
-            src="/Public/rings-pinkbg-unsplash.jpg"
-            alt=""
-          />
-        </a>
-      </div>
-      <div class="grid-item">
-        <a href="http://">
-          <img
-            height="250"
-            width="auto"
-            src="/Public/rings-pinkbg-unsplash.jpg"
-            alt=""
-          />
-        </a>
-      </div>
-      <div class="grid-item">
-        <a href="http://">
-          <img
-            height="250"
-            width="auto"
-            src="/Public/rings-pinkbg-unsplash.jpg"
-            alt=""
-          />
-        </a>
-      </div>
-      <div class="grid-item">
-        <a href="http://">
-          <img
-            height="250"
-            width="auto"
-            src="/Public/rings-pinkbg-unsplash.jpg"
-            alt=""
-          />
-        </a>
-      </div>
-      <div class="grid-item">
-        <a href="http://">
-          <img
-            height="250"
-            width="auto"
-            src="/Public/rings-pinkbg-unsplash.jpg"
-            alt=""
-          />
-        </a>
-      </div>
+    <div class="main-content-ctn grid">
+      <a href="#">
+        <img
+          height="250"
+          width="auto"
+          src="https://placehold.co/600x400"
+          alt=""
+        />
+      </a>
+      <a href="#">
+        <img
+          height="250"
+          width="auto"
+          src="https://placehold.co/600x400"
+          alt=""
+        />
+      </a>
+      <a href="#">
+        <img
+          height="250"
+          width="auto"
+          src="https://placehold.co/600x400"
+          alt=""
+        />
+      </a>
+      <a href="#">
+        <img
+          height="250"
+          width="auto"
+          src="https://placehold.co/600x400"
+          alt=""
+        />
+      </a>
+      <a href="#">
+        <img
+          height="250"
+          width="auto"
+          src="https://placehold.co/600x400"
+          alt=""
+        />
+      </a>
+      <a href="#">
+        <img
+          height="250"
+          width="auto"
+          src="https://placehold.co/600x400"
+          alt=""
+        />
+      </a>
     </div>
 
-    <!--Footer Section-->
+    <!--Footer-->
     <div class="footer-ctn">
       <img
         height="250px"
         width="100%"
-        src="/Public/jewerly banner.webp"
+        src="https://placehold.co/1600x400"
         alt=""
       />
     </div>
@@ -197,7 +186,7 @@
         </ul>
       </div>
     </div>
-  </div>
+
     <!---->
     <script src="/main.js"></script>
     <script
