@@ -6,9 +6,9 @@ let mainImageSlider = [
 ];
 
 let secondImageSlider = [
-  "https://placehold.co/800x400", //Replace with company images for main slider
-  "https://placehold.co/600x400",
-  "https://placehold.co/700x400",
+  "https://placehold.co/1800x400", //Replace with company images for main slider
+  "https://placehold.co/1600x400",
+  "https://placehold.co/1700x400",
 ];
 
 //Sets banner logo image replace elem.src with new logo file.
@@ -18,16 +18,17 @@ logoText.forEach((elem)=> {
 });
 
 let activeImage = document.getElementById("image-slider-active");
+let secondActiveImage = document.getElementById('second-image-slider-active');
 let currentIndex = 0;
-function changeImage(arr) {
-  activeImage.src = arr[currentIndex];
+function changeImage(target, arr) {
+  target.src = arr[currentIndex];
   currentIndex = (currentIndex + 1) % arr.length;
 }
 
-//changeImage(secondImageSlider);
-//setInterval(()=> changeImage(secondImageSlider),4000);
-changeImage(mainImageSlider);//start slider and pass array to be used;
-setInterval(() => changeImage(mainImageSlider), 5000);//set interval for slider; change inteval in ms
+changeImage(secondActiveImage, secondImageSlider);
+setInterval(()=> changeImage(secondActiveImage, secondImageSlider),4000);
+changeImage(activeImage, mainImageSlider);//start slider and pass array to be used;
+setInterval(() => changeImage(activeImage, mainImageSlider), 5000);//set interval for slider; change inteval in ms
 
 
 //Set Store Hours
