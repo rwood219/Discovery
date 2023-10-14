@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="/Styles.css" />
     <link
       rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+
     <title>Sample Site</title>
   </head>
   <body>
@@ -16,7 +17,7 @@
         <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
       </div>
       <!-- logo for banner is set is JS-->
-      <img height="200px" width="100%" class="company-logo" src="#" alt="">
+      <img height="200px" width="100%" class="company-logo" src="#" alt="" />
       <!--h1>Your Logo Here</h1-->
     </div>
     <div class="main-nav-ctn">
@@ -28,9 +29,10 @@
         <li class="nav-link">Nav Link</li>
       </ul>
       <!--Mobile NavBar-->
-      <button class="nav-bar-expand disabled"></button>
+      <button class="nav-bar-expand disabled">
+        <i class="fas fa-bars"></i>
+      </button>
       <ul class="nav-links-mobile disabled">
-       
         <li class="nav-link-mobile">Home</li>
         <li class="nav-link-mobile">Nav Link</li>
         <li class="nav-link-mobile">Nav Link</li>
@@ -50,14 +52,14 @@
       </p>
     </div>
 
-    <!--Image Slider Images set in js-->
+    <!--Image Slider; Images set in js; needs unique id if copy and pasted and you want different images or behaviour-->
     <div class="image-slider-ctn">
       <img width="100%" height="400" id="image-slider-active" src="" alt="" />
     </div>
 
     <!-- Main content -->
-    <div class="main-content-ctn grid">
-      <div>
+    <div class="main-content-ctn">
+      <div class="card">
         <span><h2>Card Title</h2></span>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
@@ -67,9 +69,11 @@
           fugiat animi nesciunt dignissimos velit sit nihil quo dolor quidem
           sapiente earum esse.
         </p>
-        <a href="#"><button id="learn-more-btn">Learn More</button></a>
+        <div class="card-btn-ctn">
+          <a href="#"><button class="learn-more-btn">Learn More</button></a>
+        </div>
       </div>
-      <div>
+      <div class="card">
         <span><h2>Card Title</h2></span>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
@@ -79,9 +83,11 @@
           fugiat animi nesciunt dignissimos velit sit nihil quo dolor quidem
           sapiente earum esse.
         </p>
-        <a href="#"><button class="disabled"></button></a>
+        <div class="card-btn-ctn">
+          <a href="#"><button class="learn-more-btn">Learn More</button></a>
+        </div>
       </div>
-      <div>
+      <div class="card">
         <span><h2>Card Title</h2></span>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
@@ -91,9 +97,11 @@
           fugiat animi nesciunt dignissimos velit sit nihil quo dolor quidem
           sapiente earum esse.
         </p>
-        <a href="#"><button class="disabled"></button></a>
+        <div class="card-btn-ctn">
+          <a href="#"><button class="learn-more-btn">Learn More</button></a>
+        </div>
       </div>
-      <div>
+      <div class="card">
         <span><h2>Card Title</h2></span>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
@@ -103,84 +111,81 @@
           fugiat animi nesciunt dignissimos velit sit nihil quo dolor quidem
           sapiente earum esse.
         </p>
-        <a href="#"><button class="disabled"></button></a>
+        <div class="card-btn-ctn">
+          <a href="#"><button class="learn-more-btn">Learn More</button></a>
+        </div>
       </div>
     </div>
-
+  
     <!--card grid gallery-->
-    <div class="main-content-ctn grid">
-      <a href="#">
-        <img
-          height="250"
-          width="auto"
-          src="https://placehold.co/600x400"
-          alt=""
-        />
-      </a>
-      <a href="#">
-        <img
-          height="250"
-          width="auto"
-          src="https://placehold.co/600x400"
-          alt=""
-        />
-      </a>
-      <a href="#">
-        <img
-          height="250"
-          width="auto"
-          src="https://placehold.co/600x400"
-          alt=""
-        />
-      </a>
-      <a href="#">
-        <img
-          height="250"
-          width="auto"
-          src="https://placehold.co/600x400"
-          alt=""
-        />
-      </a>
-      <a href="#">
-        <img
-          height="250"
-          width="auto"
-          src="https://placehold.co/600x400"
-          alt=""
-        />
-      </a>
-      <a href="#">
-        <img
-          height="250"
-          width="auto"
-          src="https://placehold.co/600x400"
-          alt=""
-        />
-      </a>
+    <div class="grid">
+      <div>
+        <a href="#">
+          <img
+            height="250"
+            width="auto"
+            src="https://placehold.co/600x400"
+            alt=""
+          />
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img
+            height="250"
+            width="auto"
+            src="https://placehold.co/600x400"
+            alt=""
+          />
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img
+            height="250"
+            width="auto"
+            src="https://placehold.co/600x400"
+            alt=""
+          />
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img
+            height="250"
+            width="auto"
+            src="https://placehold.co/600x400"
+            alt=""
+          />
+        </a>
+      </div>
     </div>
-     <!--Image Slider Images set in js-->
-     <div class="image-slider-ctn">
-      <img width="100%" height="" id="second-image-slider-active" src="" alt="" />
+    <!--Image Slider Images set in js-->
+    <div class="image-slider-ctn">
+      <img
+        width="100%"
+        height=""
+        id="second-image-slider-active"
+        src=""
+        alt=""
+      />
     </div>
 
     <!--Footer-->
     <div class="footer-ctn">
-      <img
-        height=""
-        width="100%"
-        src="https://placehold.co/1600x400"
-        alt=""
-      />
+      <img height="" width="100%" src="https://placehold.co/1600x400" alt="" />
     </div>
     <div class="footer-ctn">
       <div class="social-links">
         <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
         <i style="color: white" class="fa-brands fa-square-instagram"></i>
       </div>
-      <div>
-        <h2>Contact Us</h2>
-        <span>Hours</span>
+
+      <h2>Contact Us</h2>
+
+      <div class="hours-ctn">
         <ul id="hours-list">
+          <li>Hours</li>
           <li id="sunday-hours"></li>
           <li id="monday-hours"></li>
           <li id="tuesday-hours"></li>
